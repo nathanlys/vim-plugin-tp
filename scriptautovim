@@ -1,0 +1,39 @@
+mkdir -p ~/.vim/autoload ~/.vim/bundle
+cd ~/.vim/autoload
+git clone https://github.com/tpope/vim-pathogen.git
+echo -e "set nocompatible\nfiletype plugin indent on\nsyntax on\n\nexecute pathogen#infect()" > ~/.vimrc
+
+cd vim-pathogen/autoload
+mv pathogen.vim ../../
+
+cd ~/.vim/bundle
+
+git clone https://github.com/vim-airline/vim-airline
+git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
+git clone https://github.com/preservim/nerdcommenter.git
+git clone git://github.com/altercation/vim-colors-solarized.git
+git clone https://github.com/Shougo/vimshell.vim.git
+git clone http://github.com/Shougo/vimproc
+
+
+
+
+
+
+
+
+
+mkdir -p ~/.vim/pack/tpope/start
+cd ~/.vim/pack/tpope/start
+git clone https://tpope.io/vim/fugitive.git
+
+mkdir -p ~/.config/nvim/pack/airblade/start
+cd ~/.config/nvim/pack/airblade/start
+git clone https://github.com/airblade/vim-gitgutter.git
+
+
+
+
+
+
+
